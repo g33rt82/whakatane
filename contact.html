@@ -10,7 +10,7 @@
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/e84c526c00.js" crossorigin="anonymous"></script>
     <!-- custom CSS -->
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
     <title>contact</title>
 </head>
 <body>
@@ -25,120 +25,195 @@
 <main>
     <section class="contact-section bg-black">
         <div class="container">
+
             <div class="row">
+                <div class="col">
+                    <div class="card card-body">
+                        <h1>You have a Question for us?</h1>
+                        <h2>Fill in the form...</h2>
+                        <h3>or even better, just come by and ask us in person</h3>
+                    </div>
+                </div>
+            </div>
+            <!--end of row1-->
+            <div class=" row">
+
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="card py-4 h-100">"
+                        <!-- contact form -->
+                        <form>
+                            <div class="col wow animated fadeInRight" data-wow-delay=".2s">
+                                <form class="shake" role="form" method="post" id="contactForm" name="contact-form"
+                                      data-toggle="validator">
+                                    <!-- Name -->
+                                    <div class="form-group label-floating">
+                                        <label class="control-label" for="name">Name</label>
+                                        <input class="form-control" id="name" type="text" name="name" required
+                                               data-error="Please enter your name">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <!-- email -->
+                                    <div class="form-group label-floating">
+                                        <label class="control-label" for="email">Email</label>
+                                        <input class="form-control" id="email" type="email" name="email" required
+                                               data-error="Please enter your Email">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <!-- Subject -->
+                                    <div class="form-group label-floating">
+                                        <label class="control-label">Subject</label>
+                                        <input class="form-control" id="msg_subject" type="text" name="subject" required
+                                               data-error="Please enter your message subject">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <!-- Message -->
+                                    <div class="form-group label-floating">
+                                        <label for="message" class="control-label">Message</label>
+                                        <textarea class="form-control" rows="3" id="message" name="message" required
+                                                  data-error="Write your message"></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <!-- Form Submit -->
+                                    <div class="form-submit mt-5">
+                                        <button class="btn btn-common" type="submit" id="form-submit"><i
+                                                class="material-icons mdi mdi-message-outline"></i> Send Message
+                                        </button>
+                                        <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </form>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--end of row 2-->
+            <!--start or row 3-->
+            <div class="row">
+
                 <div class="col">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.58118725563!2d177.0338261150595!3d-37.96356395040238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6f07bddd3a847b%3A0x9bfa67ff87860dd!2sWhakatane%20Surf%20Life%20Saving%20Club!5e0!3m2!1snl!2sbe!4v1571933087940!5m2!1snl!2sbe"
                             width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                 </div>
             </div>
-            <div class="row">
 
-                <div class="col-md-6 mb-3 mb-md-0">
-                    <div class="card py-4 h-100">"
-                    <!-- contact form -->
-                    <form>
-                        <div class="col wow animated fadeInRight" data-wow-delay=".2s">
-                            <form class="shake" role="form" method="post" id="contactForm" name="contact-form"
-                                  data-toggle="validator">
-                                <!-- Name -->
-                                <div class="form-group label-floating">
-                                    <label class="control-label" for="name">Name</label>
-                                    <input class="form-control" id="name" type="text" name="name" required
-                                           data-error="Please enter your name">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                                <!-- email -->
-                                <div class="form-group label-floating">
-                                    <label class="control-label" for="email">Email</label>
-                                    <input class="form-control" id="email" type="email" name="email" required
-                                           data-error="Please enter your Email">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                                <!-- Subject -->
-                                <div class="form-group label-floating">
-                                    <label class="control-label">Subject</label>
-                                    <input class="form-control" id="msg_subject" type="text" name="subject" required
-                                           data-error="Please enter your message subject">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                                <!-- Message -->
-                                <div class="form-group label-floating">
-                                    <label for="message" class="control-label">Message</label>
-                                    <textarea class="form-control" rows="3" id="message" name="message" required
-                                              data-error="Write your message"></textarea>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                                <!-- Form Submit -->
-                                <div class="form-submit mt-5">
-                                    <button class="btn btn-common" type="submit" id="form-submit"><i
-                                            class="material-icons mdi mdi-message-outline"></i> Send Message
-                                    </button>
-                                    <div id="msgSubmit" class="h3 text-center hidden"></div>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </form>
-                        </div>
-                    </form>
+            <div class="col-md-3 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                        <h4 class="text-uppercase m-0">Address</h4>
+                        <hr class="my-4">
+                        <div class="small text-black-50">7 Mair St, Ohakana Island, Ohope 3121, New-Zealand</div>
+                    </div>
                 </div>
-                </div>
+            </div>
 
-
-                <div class="col-md-3 mb-3 mb-md-0">
-                    <div class="card py-4 h-100">
-                        <div class="card-body text-center">
-                            <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                            <h4 class="text-uppercase m-0">Address</h4>
-                            <hr class="my-4">
-                            <div class="small text-black-50">7 Mair St, Ohakana Island, Ohope 3121, New-Zealand</div>
+            --
+            <div class="col-md-3 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-envelope text-primary mb-2"></i>
+                        <h4 class="text-uppercase m-0">Email</h4>
+                        <hr class="my-4">
+                        <div class="small text-black-50">
+                            <a href="#">hello@yourdomain.com</a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-               <!-- <div class="col-md-3 mb-3 mb-md-0">
-                    <div class="card py-4 h-100">
-                        <div class="card-body text-center">
-                            <i class="fas fa-envelope text-primary mb-2"></i>
-                            <h4 class="text-uppercase m-0">Email</h4>
-                            <hr class="my-4">
-                            <div class="small text-black-50">
-                                <a href="#">hello@yourdomain.com</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>-->
-
-                <div class="col-md-3 mb-3 mb-md-0">
-                    <div class="card py-4 h-100">
-                        <div class="card-body text-center">
-                            <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                            <h4 class="text-uppercase m-0">Phone</h4>
-                            <hr class="my-4">
-                            <div class="small text-black-50">+64 7-312 4676</div>
-                        </div>
+            <div class="col-md-3 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                        <h4 class="text-uppercase m-0">Phone</h4>
+                        <hr class="my-4">
+                        <div class="small text-black-50">+64 7-312 4676</div>
                     </div>
                 </div>
-
-            </div>
-            <div class="row">
-                <!--The div element for the map -->
-
-                <div id="map"></div>
             </div>
 
-            <div class="social d-flex justify-content-center">
-                <a href="https://www.facebook.com/pages/category/Community/Whakatane-Surf-Life-Saving-Club-128819017221632/"
-                    target="_blank" class="mx-2">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://www.instagram.com/whakataneslsc/p/BoSYInfhtud/"  target="_blank" class="mx-2">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </div>
+        </div>
+        </div>
+
+        <div class="social d-flex justify-content-center">
+
+        </div>
 
         </div>
     </section>
 </main>
-<footer>&copy; whakatane surfclub 2019</footer>
+<footer class="bg-dark">
+    <div class="container">
+    <div class="row justify-content-between">
+
+        <div clas="col-sm-3">
+            <div class="card bg-dark text-white">
+                <div class="card-body">
+
+                    <div class="card-title text-warning">
+                        <h3>Stay in touch</h3>
+                    </div>
+                    <div class="card-text">
+<p><i class="fas fa-phone-alt fa-2x"></i> +64 7-312 4676</p>
+                        <p><i class="fas fa-map-marker-alt fa-2x"></i> 7 Mair St<br> Ohakana Island<br> Ohope 3121<br> New-Zealand</p>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div clas="col-sm-6">
+            <div class="card bg-dark text-white">
+                <div class="card-body ">
+
+                    <div class="card-title text-warning mx-auto"><h3>Opening Hours</h3></div>
+                        <div class="card-text text-center">
+                            <p>monday 4pm - 10pm</p>
+                            <p>tuesday 4pm - 10pm</p>
+                            <p>wednesday 4pm - 10pm</p>
+                            <p>thursday 4pm - 10pm</p>
+                            <p>friday 4pm - 10pm</p>
+                            <p>saturday 9am - 10pm</p>
+                            <p>sunday 9am - 8pm</p>
+
+                        </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div clas="col-sm-3">
+            <div class="card bg-dark text-white">
+                <div class="card-body">
+
+                    <div class="card-title text-warning">
+                        <h3>connect with us</h3>
+                    </div>
+                        <div class="card-text d-flex justify-content-around">
+                            <a href="https://www.facebook.com/pages/category/Community/Whakatane-Surf-Life-Saving-Club-128819017221632/"
+                               target="_blank" class="mx-2">
+                                <i class="fab fa-facebook-f fa-5x" style="color:#eeeeee;"></i>
+                            </a>
+
+                            <a href="https://www.instagram.com/whakataneslsc/p/BoSYInfhtud/" target="_blank" class="mx-2">
+                                <i class="fab fa-instagram fa-5x" style="color:#eeeeee;"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+    </div>
+        <div class="row d-flex justify-content-center">
+    <p class="text-warning">&copy; whakatane surfclub 2019</p>
+        </div>
+    </div>
+</footer>
+
 <script>
     // Initialize and add the map
     function initMap() {
