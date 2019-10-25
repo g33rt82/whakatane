@@ -22,42 +22,57 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+
     <main>
-        <h1>About Us</h1>
-        <hr>
-        <div class="row">
-            <div class="col">
-                <h2>Welcome...</h2>
-                <p>The Whakatane Surf & Lifesaving Club is based at Ohope Beach in the Bay of Plenty. In 2018 the Club
-                    celebrated its 85th anniversary and today still is an integral part of the beach and Whakatane town.
-                </p>
+        <div class="container">
+            <div class="row m-2">
+                <h1>About Us</h1>
             </div>
-            <div class="col">
-                <img class="img-fluid"
-                    src="https://www.surf-forecast.com/system/images/18157/large/Muriwai-Beach.jpg?1497692766"
-                    alt="Surfer" width="300" height="300">
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Welcome...</h2>
+                    <p>The Whakatane Surf & Lifesaving Club is based at Ohope Beach in the Bay of Plenty. In 2018 the
+                        Club
+                        celebrated its 85th anniversary and today still is an integral part of the beach and Whakatane
+                        town.
+                        <br><br> We are proud to offer our local commnity a variety of services throughout the year. We
+                        encourage all people to come and enjoy the water safely. <br><br> Read more about our programs
+                        and
+                        facilities below.</p>
+                    <h3>Committee Members</h3>
+                    Thanks to these people we continue to operate this year:
+                    <ul>
+                        <li><strong>President:</strong> Harry</li>
+                        <li><strong>Vice President:</strong> Hermione</li>
+                        <li><strong>Club Captain:</strong> Ron</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid"
+                        src="https://www.surf-forecast.com/system/images/18157/large/Muriwai-Beach.jpg?1497692766"
+                        alt="Surfer">
+                </div>
             </div>
         </div>
 
-        <hr>
-
         <div class="container">
-            <div class="card-deck m-4">
-                <div class="col-md-3 text-center card shadow">
+            <hr>
+            <div class="card-deck m-5">
+                <div class="text-center card shadow">
                     <img class="img-fluid p-4" src="assets/surfboard.png" alt="Surf School Image">
                     <h5 class="card-title">Surf School</h5>
                     <p class="card-body">Lessons for all!</p>
                     <button type="button" class="btn btn-primary" data-toggle="modal"
-                        data-target="#exampleModalScrollable">
+                        data-target="#school-ModalScrollable">
                         Learn more
                     </button>
                     <!-- Modal for Surf School -->
-                    <div class="modal" id="exampleModalScrollable" tabindex="-1" role="dialog"
-                        aria-labelledby="exampleModalScrollableLabel" aria-hidden="true">
+                    <div class="modal" id="school-ModalScrollable" tabindex="-1" role="dialog" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-scrollable" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalCenteredLabel">Whakatane Surf School</h5>
+                                    <h5 class="modal-title" id="school-ModalCenteredLabel">Whakatane Surf School</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
@@ -75,29 +90,28 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 text-center card shadow">
+                <div class="text-center card shadow">
                     <img class="img-fluid p-4" src="assets/wind.png" alt="LifeSaving Image">
                     <h5 class="card-title">Lifesaving</h5>
                     <p class="card-body">Join our team of lifesavers.</p>
                     <button type="button" class="btn btn-primary" data-toggle="modal"
-                        data-target="#exampleModalScrollable">
+                        data-target="#life-ModalScrollable">
                         Learn more
                     </button>
                     <!-- Modal for Lifesaving -->
-                    <div class="modal" id="exampleModalScrollable" tabindex="-1" role="dialog"
-                        aria-labelledby="exampleModalScrollableLabel" aria-hidden="true">
+                    <div class="modal" id="life-ModalScrollable" tabindex="-1" role="dialog" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-scrollable" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalCenteredLabel">Whakatane Surf School</h5>
+                                    <h5 class="modal-title" id="life-ModalCenteredLabel">Lifesaving at Whakatane</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    From November until March we offer lessons to all who want to learn to surf. We host
-                                    free open days on the first and second Saturday of November and encourage people of
-                                    all abilities to join.
+                                    As a part of the Whakatane community, we offer lifesaving services all along the
+                                    coast. We also welcome volunteer lifesavers to join our training programme and help
+                                    make a difference.
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -107,29 +121,29 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 text-center card shadow">
+                <!--Clubhouse Card-->
+                <div class="text-center card shadow">
                     <img class="img-fluid p-4" src="assets/hand.png" alt="Surf School Image">
                     <h5 class="card-title">Club House</h5>
                     <p class="card-body">Enjoy our facilities.</p>
                     <button type="button" class="btn btn-primary" data-toggle="modal"
-                        data-target="#exampleModalScrollable">
+                        data-target="#club-ModalScrollable">
                         Learn more
                     </button>
+
                     <!-- Modal for Clubhouse-->
-                    <div class="modal" id="exampleModalScrollable" tabindex="-1" role="dialog"
-                        aria-labelledby="exampleModalScrollableLabel" aria-hidden="true">
+                    <div class="modal" id="club-ModalScrollable" tabindex="-1" role="dialog" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-scrollable" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalCenteredLabel">Whakatane Surf School</h5>
+                                    <h5 class="modal-title" id="club-ModalCenteredLabel">Club House</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    From November until March we offer lessons to all who want to learn to surf. We host
-                                    free open days on the first and second Saturday of November and encourage people of
-                                    all abilities to join.
+                                    Join our surf club as a member and recieve access year round to our cafe and club
+                                    house facilities.
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -142,10 +156,13 @@
 
             </div>
         </div>
+    </main>
 
 
-        <footer><div>&copy; Whakatane Surfclub 2019</div>
-                <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"         title="Flaticon">www.flaticon.com</a></div>
+        <footer>
+            <div>&copy; Whakatane Surfclub 2019</div>
+            <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
+                    href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
         </footer>
 
         <!-- Optional JavaScript -->
