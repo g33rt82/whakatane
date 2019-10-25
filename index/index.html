@@ -1,87 +1,134 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-
     <title>Whakatane</title>
 </head>
-<style>
-    body {
-        background: #fdf0c4;
-    }
-</style>
 
-<body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">Surf Now</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
+<body data-spy="scroll" data-target="#navbarResponsive">
+
+    <!-- start homepage section -->
+    <div id="home">
+
+        <!-- navigation-->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="index.html"><img src="stingray-logo.png"> Whakatane</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                        <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
+                        <a class="nav-link" href="#events">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
-        </div>
-    </nav>
-
-    <main>
-
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        </nav>
+        <!--- carousel start -->
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000" style="height: 95vh;">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+
             </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="..." alt="First slide">
+            <div class="carousel-inner" role="listbox">
+                <!-- slide 1-->
+                <div class="carousel-item active" style="height: 90vh; background: url(./sunset2.jpg) no-repeat left/cover" ;>
+                    <!--<img src="./sunset2.jpg " alt=" " class="d-block w-100 h-100 ">-->
+                    <div class="carousel-caption text-center ">
+                        <h1>Haere Mai!</h1>
+                        <h3>subtitle</h3>
+                        <a class="btn btn-outline-light btn-lg " href="#about ">About</a>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="..." alt="Second slide">
+
+                <div class="carousel-item" style="height: 90vh; background: url(./surfboards2.jpg) no-repeat left/cover">
+                    <!-- <img src="./surfboards2.jpg " alt=" " class="d-block w-100 "> -->
+                    <div class="carousel-caption text-center ">
+                        <h1>Haere Mai!</h1>
+                        <h3>subtitle</h3>
+                        <a class="btn btn-outline-light btn-lg " href="#about ">About</a>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="..." alt="Third slide">
+
+                <div class="carousel-item" style="height: 90vh; background: url(./surfboards.jpg) no-repeat left/cover">
+                    <!-- <img src="./surfboards.jpg " alt=" " class="d-block w-100 "> -->
+                    <div class="carousel-caption text-center ">
+                        <h1>Haere Mai!</h1>
+                        <h3>subtitle</h3>
+                        <a class="btn btn-outline-light btn-lg " href="#about ">About</a>
+                    </div>
                 </div>
+
+
+
+
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+
+
         </div>
 
-    </main>
+    </div>
 
-    <footer>&copy; whakatane surfclub 2019</footer>
+    <div class="box1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente nostrum tenetur culpa iure aliquid mollitia delectus asperiores, soluta, animi incidunt veritatis possimus, molestiae facere quod cumque eligendi maxime inventore quo voluptas atque?
+        Quia dolores, aliquam, atque necessitatibus aliquid odio libero quis eius laborum voluptate commodi molestias possimus ad cumque repellat corporis, deleniti reprehenderit. Autem tempora harum voluptate, reiciendis labore minus dolores fugiat accusantium
+        dignissimos maxime dolorem suscipit iure exercitationem impedit qui recusandae illo quae voluptas eius, non assumenda cupiditate neque! Debitis architecto aspernatur in dicta neque delectus quidem cupiditate. Sed veniam facilis ducimus ex architecto
+        placeat consequatur maiores dignissimos accusamus.</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque rem, dolorem mollitia quam quisquam ad modi saepe optio iure, quaerat, fugiat sunt possimus iusto officiis incidunt praesentium quos dolor impedit. Laudantium asperiores quibusdam facere,
+        alias odio nihil beatae itaque explicabo nesciunt, eius inventore repudiandae facilis reprehenderit et voluptatem! Dolor ducimus blanditiis nobis facilis in consectetur voluptate enim asperiores praesentium ab. Ex, quas fuga? Accusantium ullam
+        ipsum quis nulla vitae odit consectetur atque maiores odio commodi! Accusamus animi aliquam vel rerum dolores enim facere. Corporis velit sit facere tempore quidem amet illo rem autem, odio quaerat beatae suscipit deleniti numquam recusandae temporibus
+        quas vero debitis corrupti laudantium aut sapiente accusantium itaque nisi expedita? Architecto beatae labore corporis aliquam dolore mollitia a nisi cumque, earum nihil iusto atque aperiam ipsa quo numquam. Voluptatum voluptatem et, eaque nulla
+        natus nemo quo. Saepe, nostrum laborum reprehenderit esse, adipisci sapiente deleniti iusto excepturi porro dolorum consequatur optio nulla recusandae molestias facere dolorem necessitatibus natus et doloremque voluptatibus non. Itaque hic nostrum
+        in. Atque, rerum autem totam nisi impedit magnam neque iusto, quia accusamus esse minima doloribus magni hic aliquid vitae quisquam doloremque mollitia cumque ipsa dolores aperiam voluptas facilis porro asperiores. Totam ad neque ducimus harum
+        rem doloribus a facilis similique, ab perspiciatis molestiae adipisci dolorem maiores ipsa laudantium alias magni. Rerum est laborum dicta magnam fugit, saepe reprehenderit ullam ipsam recusandae at asperiores deleniti, incidunt voluptas numquam
+        consequatur quisquam fuga modi. Omnis, deserunt minima ad eum dolor dolore architecto saepe fugit distinctio exercitationem quisquam porro, sed nihil officia ullam, quasi quae nesciunt a voluptas error officiis minus! Quidem voluptate quam magnam
+        debitis voluptatem? Officiis architecto dolorum voluptate voluptatem nobis, dolores, magni maxime quaerat cum velit voluptates nulla numquam in vitae voluptatum sapiente error quia cumque dolorem distinctio omnis sit a ipsum illo. Nostrum dolor
+        velit, consectetur ab similique possimus quam ullam beatae veniam. Voluptatem voluptatibus provident sit rem eveniet fugiat odit laborum, doloribus enim dolorem reiciendis! Ad, asperiores libero. Voluptas aliquam impedit, vel qui nisi rem debitis
+        hic nesciunt nihil, magni necessitatibus nam quidem quas, ea corrupti voluptate omnis numquam reiciendis. Repudiandae a voluptatibus accusamus dolorem est suscipit tempore temporibus deserunt laborum? Qui quis, iure quos natus reprehenderit sint
+        nostrum saepe quia delectus alias? Aperiam natus nesciunt illo repellendus ad? Et, quibusdam deleniti. Labore facilis quam, fuga ipsum, quasi aspernatur illum quisquam saepe nisi eaque officia nihil laboriosam magni quia praesentium repellat corrupti
+        reiciendis. Eaque, eum, eveniet amet cum dignissimos rem velit fugit nostrum aliquid consequuntur mollitia molestias architecto. Quidem perspiciatis enim fugit. Aliquid officiis facere praesentium impedit, alias animi quam ad numquam assumenda?
+        Ut quos deserunt maxime facilis assumenda rem vero voluptates temporibus odit, officia exercitationem itaque sint veritatis modi praesentium officiis eaque hic, numquam culpa! Rerum harum dicta odio neque maiores delectus, eum, amet, voluptas
+        quia asperiores consequatur? Nisi, in. Libero quam assumenda nulla quaerat quos. Totam eos quis necessitatibus dicta esse, fugit ut sequi nihil explicabo assumenda perferendis repudiandae numquam cupiditate quos beatae ullam accusantium quasi
+        minus illum consequatur. Rerum, obcaecati? Nesciunt tempora dolorum harum blanditiis illo aspernatur iure beatae facilis sed ipsum aperiam, commodi reiciendis numquam eos, placeat possimus sapiente incidunt deleniti nam impedit et corrupti error?
+        Impedit quo architecto ea, delectus laudantium exercitationem consequatur debitis obcaecati quae doloremque, quod tempore suscipit magni a cumque facilis eum unde neque distinctio doloribus quidem temporibus ab quasi? Repudiandae quasi facilis
+        soluta nesciunt dolor laudantium quos fugit hic voluptates eaque eligendi magnam facere cumque dolorem officia minus sapiente, placeat fugiat natus illum recusandae quaerat ab sunt! Rerum, similique ipsum aspernatur distinctio nobis cum sunt?
+        Officia consequuntur possimus quo enim voluptatibus ipsa animi dolorem sed, inventore pariatur earum harum delectus. Voluptatibus fugiat quo minima, alias dignissimos saepe cumque laboriosam hic natus id quidem vero unde totam atque modi! Voluptates
+        vel velit, iure tempora accusamus obcaecati molestias incidunt quod dolore? Repudiandae minima perferendis possimus vitae soluta libero aspernatur exercitationem saepe. Molestias facere sed reiciendis repellat vel aliquid culpa maxime qui omnis
+        consectetur animi, vero minus tempora voluptatem ut porro exercitationem deleniti sapiente! Excepturi alias vero libero velit cum cupiditate, quae commodi saepe dignissimos est repudiandae aliquam nam, labore nihil illo quidem optio. Laudantium
+        eligendi fugit impedit neque at sapiente earum praesentium, sequi, delectus nemo aut similique quasi nihil sint suscipit saepe est enim quo quaerat eveniet vitae. Sit corporis accusamus eligendi animi quisquam nesciunt quis velit adipisci quasi,
+        voluptatum deserunt. Veniam praesentium mollitia molestiae sed nobis culpa ut provident, debitis hic commodi ducimus enim id sunt distinctio rerum libero aliquam quibusdam eius ullam corporis adipisci! Aliquam tempore sapiente aperiam excepturi
+        nemo? Quidem veniam excepturi architecto aliquid porro voluptatem, iste odit eveniet incidunt expedita, consequuntur quis tempora. Molestiae vel rem at obcaecati officia modi deleniti praesentium voluptas dolore exercitationem, iste nostrum mollitia
+        sed accusamus, voluptatum nemo inventore assumenda saepe ducimus? Ipsa itaque, totam architecto ipsam possimus molestias veniam, eveniet odit, error nihil non! Aspernatur, voluptate explicabo commodi quisquam perspiciatis aliquam necessitatibus
+        adipisci provident numquam facere dolorem culpa assumenda reprehenderit! Explicabo, dolores neque dolorem hic, sit error exercitationem, nemo omnis obcaecati pariatur vel vero autem perferendis placeat incidunt iste! Iusto eaque voluptatum soluta
+        distinctio. Esse perferendis asperiores quo dicta, iste quae obcaecati quaerat voluptatibus vitae exercitationem maiores unde. Error expedita reiciendis necessitatibus eaque eum. Quo, explicabo architecto maiores iure quam placeat fugit vel est
+        adipisci reprehenderit perspiciatis vitae laboriosam eaque impedit suscipit obcaecati sit molestias, optio quos inventore dolore a? Ipsum amet ea cum ratione, possimus iure veritatis modi dolor laudantium ipsa explicabo soluta tempora et itaque!
+        Excepturi accusamus odit repudiandae voluptatum eligendi voluptas hic dolores amet! Sequi eius id, quisquam, eveniet ratione vero laboriosam placeat earum expedita doloribus minima tenetur, modi dolores voluptate sapiente! Vero rem magni sit eius
+        animi neque nulla itaque ut, mollitia error illum veritatis quo officia reprehenderit consequatur accusamus deleniti quae? Accusantium quaerat recusandae, omnis quibusdam nostrum repellendus consequatur ipsum molestiae facere aspernatur eaque
+        voluptatibus cupiditate temporibus. Dolorem, ipsam doloribus nobis nostrum hic veniam eveniet impedit magni corrupti eum, fugit temporibus fugiat esse quia, cum rerum error! Minima veniam eos sunt voluptatum.</p>
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
 
 </body>
 
