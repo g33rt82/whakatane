@@ -11,6 +11,17 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <title>About Us</title>
+
+    <style>
+        .card:hover {
+            -webkit-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+            box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -24,7 +35,7 @@
     </nav>
 
     <main>
-        <div class="container">
+        <div id="info-container" class="container">
             <div class="row m-2">
                 <h1>About Us</h1>
             </div>
@@ -51,12 +62,12 @@
             <div class="row">
                 <div class="col-md-12">
                     <h3>Committee Members</h3>
+                    <p>Thanks to these people we continue to operate this year:</p>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-md-6">
-                    Thanks to these people we continue to operate this year:
                     <ul>
                         <li><strong>President:</strong> Harry</li>
                         <li><strong>Vice President:</strong> Hermione</li>
@@ -76,110 +87,125 @@
 
             </div>
         </div>
-        </div>
-        </div>
 
-        <div class="container">
-            <hr>
-            <div class="card-deck m-5">
-                <div class="text-center card shadow" style="width:18rem">
-                    <img class="card-img-top p-4" src="assets/surfboard.png" alt="Surf School Image">
-                    <h5 class="card-title">Surf School</h5>
-                    <p class="card-body">Lessons for all!</p>
-                    <button type="button" class="btn btn-primary-outline" data-toggle="modal"
-                        data-target="#school-ModalScrollable">
-                        Learn more
-                    </button>
-                    <!-- Modal for Surf School -->
-                    <div class="modal" id="school-ModalScrollable" tabindex="-1" role="dialog" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-scrollable" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="school-ModalCenteredLabel">Whakatane Surf School</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    From November until March we offer lessons to all who want to learn to surf. We host
-                                    free open days on the first and second Saturday of November and encourage people of
-                                    all abilities to join.
-                                </div>
-                                <img class="img-fluid" src="assets/surfboard.png" alt="Surf">
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
+        <div id="card-container" class="container">
+            <div class="row card-deck m-5">
+                <div class="col-4-lg">
+
+                    <!-- Card 1 - Surf School-->
+                    <div class="card" style="width:12rem">
+                        <img class="card-img-top p-4" src="assets/surfboard.png" alt="Surf School Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Surf School</h5>
+                            <p class="card-text">Lessons for all!</p>
+                            <button type="button" class="btn btn-primary-outline" data-toggle="modal"
+                                data-target="#school-ModalScrollable">
+                                Learn more
+                            </button>
                         </div>
                     </div>
                 </div>
 
-                <div class="text-center card shadow" style="width:18rem">
-                    <img class="card-img-top p-4" src="assets/wind.png" alt="LifeSaving Image">
-                    <h5 class="card-title">Lifesaving</h5>
-                    <p class="card-body">Join our team of lifesavers.</p>
-                    <button type="button" class="btn btn-primary-outline" data-toggle="modal"
-                        data-target="#life-ModalScrollable">
-                        Learn more
-                    </button>
-                    <!-- Modal for Lifesaving -->
-                    <div class="modal" id="life-ModalScrollable" tabindex="-1" role="dialog" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-scrollable" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="life-ModalCenteredLabel">Lifesaving at Whakatane</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    As a part of the Whakatane community, we offer lifesaving services all along the
-                                    coast. We also welcome volunteer lifesavers to join our training programme and help
-                                    make a difference.
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                </div>
+                <!-- Modal for Surf School -->
+                <div class="modal" id="school-ModalScrollable" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="school-ModalCenteredLabel">Whakatane Surf School</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--Clubhouse Card-->
-                <div class="text-center card shadow" style="width:18rem">
-                    <img class="card-img-top p-4" src="assets/hand.png" alt="Surf School Image">
-                    <h5 class="card-title">Club House</h5>
-                    <p class="card-body">Enjoy our facilities.</p>
-                    <button type="button" class="btn btn-primary-outline" data-toggle="modal"
-                        data-target="#club-ModalScrollable">
-                        Learn more
-                    </button>
-
-                    <!-- Modal for Clubhouse-->
-
-
-                    <div class="modal" id="club-ModalScrollable" tabindex="-1" role="dialog" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-scrollable" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="club-ModalCenteredLabel">Club House</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    Join our surf club as a member and recieve access year round to our cafe and club
-                                    house facilities.
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                </div>
+                            <div class="modal-body">
+                                From November until March we offer lessons to all who want to learn to surf. We host
+                                free open days on the first and second Saturday of November and encourage people of
+                                all abilities to join.
+                            </div>
+                            <img class="img-fluid" src="assets/surfboard.png" alt="Surf">
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
 
+                <div class="col-4-lg">
+
+                    <!-- Card 2 - Lifesaving-->
+                    <div class="card" style="width:12rem">
+                        <img class="card-img-top p-4" src="assets/wind.png" alt="LifeSaving Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Lifesaving</h5>
+                            <p class="card-text">Join our team!</p>
+                            <button type="button" class="btn btn-primary-outline" data-toggle="modal"
+                                data-target="#life-ModalScrollable">
+                                Learn more
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal for Lifesaving -->
+                <div class="modal" id="life-ModalScrollable" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="life-ModalCenteredLabel">Lifesaving at Whakatane</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                As a part of the Whakatane community, we offer lifesaving services all along the
+                                coast. We also welcome volunteer lifesavers to join our training programme and help
+                                make a difference.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-4-lg">
+
+                    <!-- Card 3 - Club House-->
+                    <div class="card" style="width:12rem">
+                        <img class="card-img-top p-4" src="assets/hand.png" alt="Club House Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Club House</h5>
+                            <p class="card-text">Enjoy our facilities!</p>
+                            <button type="button" class="btn btn-primary-outline" data-toggle="modal"
+                                data-target="#club-ModalScrollable">
+                                Learn more
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Modal for Clubhouse-->
+                <div class="modal" id="club-ModalScrollable" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="club-ModalCenteredLabel">Club House</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Join our surf club as a member and recieve access year round to our cafe and club
+                                house facilities.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -191,17 +217,36 @@
                 href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     </footer>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-			  crossorigin="anonymous"></script>
+    <!-- Card Hover JavaScript -->
+    <script>
+        $(document).ready(function () {
+
+            $('.col-4-lg').hover(
+                //triggers when mouse hovers
+                function () {
+                    $(this).animate({
+                        marginTop: "-=1%",
+                    }, 200);
+                },
+
+                //triggers on mouse out
+                function () {
+                    $(this).animate({
+                        marginTop: "0%",
+                    }, 200);
+                }
+            );
+        });
+    </script>
+
+    <!-- jQuery in head, then Popper.js, then Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+
 </body>
 
 </html>
