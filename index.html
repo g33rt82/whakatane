@@ -5,10 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="whakatane,'bay of plenty', surfing, surfclub, new-zealand">
+    <meta name="description" content="Unofficial website of the Whaktane Surf Club">
+    <meta name="author" content="Team Erin">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="scss/style.css">
+    <link rel="icon" type="image/png" href="images/stingray-logo.png">
     <title>Whakatane</title>
     <script src="https://kit.fontawesome.com/e84c526c00.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -46,12 +50,12 @@
             </nav>
             <!--- carousel start -->
             <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel"
-                data-interval="5000" style="height: 95vh;">
+                data-interval="5000" style="height: 100vh;">
 
                 <div class="carousel-inner" role="listbox">
                     <!-- slide 1-->
                     <div class="carousel-item active"
-                        style="height: 90vh; background: url(images/sunset2.jpg) no-repeat left/cover" ;>
+                        style="height: 100vh; background: url(images/sunset2.jpg) no-repeat left/cover" ;>
                         <!--<img src="./sunset2.jpg " alt=" " class="d-block w-100 h-100 ">-->
                         <div class="carousel-caption text-center ">
                             <h1>Haere Mai!</h1>
@@ -61,7 +65,7 @@
                     </div>
 
                     <div class="carousel-item"
-                        style="height: 90vh; background: url(images/surfboards2.jpg) no-repeat left/cover">
+                        style="height: 100vh; background: url(images/surfboards2.jpg) no-repeat left/cover">
                         <!-- <img src="./surfboards3.jpg " alt=" " class="d-block w-100 "> -->
                         <div class="carousel-caption text-center ">
                             <h1>Haere Mai!</h1>
@@ -71,7 +75,7 @@
                     </div>
 
                     <div class="carousel-item"
-                        style="height: 90vh; background: url(images/surfboards.jpg) no-repeat left/cover">
+                        style="height: 100vh; background: url(images/surfboards3.jpg) no-repeat left/cover">
                         <!-- <img src="./surfboards.jpg " alt=" " class="d-block w-100 "> -->
                         <div class="carousel-caption text-center ">
                             <h1>Haere Mai!</h1>
@@ -92,12 +96,10 @@
         </div>
     </section>
     <!-- end of home section-->
+    <!-- begin of about section-->
     <main>
         <section id="about">
             <div id="info-container" class="container">
-                <div class="row m-2">
-                    <h1>About Us</h1>
-                </div>
                 <hr>
                 <div class="row">
                     <div class="col-md-6">
@@ -124,7 +126,7 @@
 
                 <div class="row">
                     <div class="col-md-12">
-                        <h3>Committee Members</h3>
+                        <h3 class="mt-5 mb-3">Committee Members</h3>
                         <p>Thanks to these people we continue to operate this year:</p>
                     </div>
                 </div>
@@ -157,7 +159,7 @@
 
                         <!-- Card 1 - Surf School-->
                         <div class="card" style="width:12rem">
-                            <img class="card-img-top p-5" src="images/surfboard.png" alt="Surf School Image">
+                            <img class="card-img-top p-5 same-size" src="images/surfboard.png" alt="Surf School Image">
                             <div class="card-body">
                                 <h5 class="card-title">Surf School</h5>
                                 <p class="card-text">Lessons for all!</p>
@@ -199,7 +201,7 @@
 
                         <!-- Card 2 - Lifesaving-->
                         <div class="card" style="width:12rem">
-                            <img class="card-img-top p-5" src="images/wind.png" alt="LifeSaving Image">
+                            <img class="card-img-top p-5 same-size" src="images/wind.png" alt="LifeSaving Image">
                             <div class="card-body">
                                 <h5 class="card-title">Lifesaving</h5>
                                 <p class="card-text">Join our team!</p>
@@ -241,9 +243,9 @@
 
                         <!-- Card 3 - Club House-->
                         <div class="card" style="width:12rem">
-                            <img class="card-img-top p-5" src="images/hand.png" alt="Club House Image">
+                            <img class="card-img-top p-5 same-size" src="images/hand.png" alt="Club House Image">
                             <div class="card-body">
-                                <h5 class="card-title">Club House</h5>
+                                <h5 class="card-title titles">Club House</h5>
                                 <p class="card-text">Enjoy our facilities!</p>
                                 <button type="button" class="btn btn-primary-outline" data-toggle="modal"
                                     data-target="#club-ModalScrollable">
@@ -278,7 +280,8 @@
                 </div>
             </div>
         </section>
-        <!--Events section-->
+        <!--end of about section-->
+        <!--News section-->
         <section id="events" class="events-section bg-light">
             <div class="container">
 
@@ -309,7 +312,7 @@
                     </div>
                 </div>
                 <!--9 picture grid-->
-                <h3 class="text-center"> Moodsetter for our Bali visit.</h3>
+                <h3 class="text-center mt-5 mb-4"> Moodsetter for our Bali visit.</h3>
                 <div class="row imagegrid">
                     <div class="col-md-4 px-0">
                         <div class="zoom">
@@ -362,9 +365,9 @@
                     </div>
                 </div>
                 <!--non featured news-->
-                <h3 class="text-center">Latest news</h3>
+                <h3 class="text-center mt-5 mb-3">Latest news</h3>
                 <div class="col-lg-9">
-                    <div class="blog row mb-4">
+                    <div class="blog row mb-4 bg-light">
                         <div class="news-item-img col-lg-4">
                             <a
                                 href="http://www.surfingnz.co.nz/finals-day-set-maori-titles-impressive-performances-senior-surfers/"><img
@@ -382,7 +385,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="blog row mb-4">
+                    <div class="blog row mb-4 bg-light">
                         <div class="news-item-img col-lg-4">
                             <a href="http://www.surfingnz.co.nz/new-zealand-junior-surfing-team-readies-world-champs/"><img
                                     class="news-item-img img-fluid" src="images/Item2.jpg" alt=""></a>
@@ -399,7 +402,7 @@
                                 amongst the country’s [...]</p>
                         </div>
                     </div>
-                    <div class="blog row mb-4">
+                    <div class="blog row mb-4 bg-light">
                         <div class="news-item-img col-lg-4">
                             <a href="http://www.surfingnz.co.nz/wave-warriors-learn-surf-programme-reaches-milestone/"><img
                                     class="news-item-img img-fluid" src="images/Item3.jpg" alt=""></a>
