@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* zoom effect on 9 img grid*/
 .zoom {
   overflow: hidden;
@@ -9,5 +10,9 @@
 
 .zoom:hover img {
   transform: scale(1.25);
+=======
+kkk {
+  text-shadow: 0;
+>>>>>>> homepage
 }
 /*# sourceMappingURL=style.css.map */
