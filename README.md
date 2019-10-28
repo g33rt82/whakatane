@@ -36,4 +36,4 @@ We had an extensive list of requirements and feel we've meet them all.
 
 ---
 
-### Licensed to our group. Please do not use this website anywhere. 
+### This project is licensed under the terms of the MIT license. 
