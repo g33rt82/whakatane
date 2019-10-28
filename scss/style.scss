@@ -120,8 +120,15 @@ html {
 
 footer {
     background-color: #111;
+    h3 {
+        color: $main-orange;
+    }
 }
 
 .fa-inverse:hover {
+    color: $main-orange;
+}
+
+#copyright {
     color: $main-orange;
 }
