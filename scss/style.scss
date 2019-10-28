@@ -2,10 +2,16 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
 @import 'partials/mixins';
 @import 'partials/variables';
+// Imports
+@import 'partials/mixins';
+@import 'partials/variables';
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Arimo&display=swap');
 body {
     overflow-x: hidden;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Arimo', 'sans-serif';
     color: #505962;
+    font-size: 16px;
 }
 
 html {
@@ -17,12 +23,18 @@ main {
     font-family: $font-stack;
 }
 
+html {
+    scroll-behavior: smooth;
+    transition-duration: 500ms;
+}
+
 
 /*-- navbar --*/
 
 .navbar {
     transition: 500ms;
     text-transform: uppercase;
+    transform: 500ms;
     font-weight: 900;
     font-size: .9rem;
     letter-spacing: .1rem;
@@ -80,6 +92,11 @@ main {
 
 .centered {
     @include centered;
+}
+
+.same-size {
+    max-height: 12rem;
+    max-width: auto;
 }
 
 //ERIN END
