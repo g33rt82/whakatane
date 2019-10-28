@@ -41,3 +41,62 @@ body {
     height: 500px;
     border: solid 10px;
 }
+// ERIN START
+
+// Imports
+
+@import 'partials/mixins';
+@import 'partials/variables';
+
+// About Us Styling
+
+.card:hover {
+    @include hover-shadow;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-margin {
+    margin-bottom: 12px;
+}
+
+.modal-image {
+    opacity: 0.15;
+}
+
+.overlay {
+    position: relative;
+    text-align: center;
+}
+
+.centered {
+    @include centered;
+}
+
+//ERIN END
+/* zoom effect on 9 img grid*/
+
+.zoom {
+    overflow: hidden;
+}
+
+.zoom img {
+    transition: all 1.5s ease;
+}
+
+.zoom:hover img {
+    transform: scale(1.25);
+}
+
+
+/*---------------------------*/
+
+footer {
+    background-color: #111;
+}
+
+.fa-inverse:hover {
+    color: orange;
+}
