@@ -22,3 +22,36 @@ $colors: (
 @function color($color-name) {
     @return map-get($colors, $color-name)
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------*/
+footer {
+  background-color: #111;
+}
+
+.fa-inverse:hover {
+  color: orange;
+}
+>>>>>>> contact
