@@ -1,24 +1,38 @@
-
 // Imports
-
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+@import 'partials/mixins';
+@import 'partials/variables';
+// Imports
 @import 'partials/mixins';
 @import 'partials/variables';
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Arimo&display=swap');
 body {
     overflow-x: hidden;
-    font-family: 'Arimo','sans-serif';
+    font-family: 'Arimo', 'sans-serif';
     color: #505962;
     font-size: 16px;
 }
+
 html {
     scroll-behavior: smooth;
     transition-duration: 500ms;
-    }
+}
+
+main {
+    font-family: $font-stack;
+}
+
+html {
+    scroll-behavior: smooth;
+    transition-duration: 500ms;
+}
+
 
 /*-- navbar --*/
 
 .navbar {
+    transition: 500ms;
     text-transform: uppercase;
     transform: 500ms;
     font-weight: 900;
@@ -41,7 +55,7 @@ html {
 
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: #1ebba3;
+    color: $main-orange;
 }
 
 
@@ -52,12 +66,9 @@ html {
     height: 500px;
     border: solid 10px;
 }
+
 // ERIN START
-
-
-
 // About Us Styling
-
 .card:hover {
     @include hover-shadow;
 }
@@ -82,11 +93,14 @@ html {
 .centered {
     @include centered;
 }
+
 .same-size {
     max-height: 12rem;
     max-width: 12rem;
     }
+
 //ERIN END
+
 /* zoom effect on 9 img grid*/
 
 .zoom {

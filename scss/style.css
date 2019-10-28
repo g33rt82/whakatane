@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+/* font family */
+/* font family */
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Arimo&display=swap");
 body {
   overflow-x: hidden;
-  font-family: 'Arimo','sans-serif';
+  font-family: 'Arimo', 'sans-serif';
   color: #505962;
   font-size: 16px;
 }
@@ -12,8 +15,18 @@ html {
   transition-duration: 500ms;
 }
 
+main {
+  font-family: "Lato", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  transition-duration: 500ms;
+}
+
 /*-- navbar --*/
 .navbar {
+  transition: 500ms;
   text-transform: uppercase;
   transform: 500ms;
   font-weight: 900;
@@ -36,7 +49,7 @@ html {
 
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #1ebba3;
+  color: #E07421;
 }
 
 /* --- slider ---*/
