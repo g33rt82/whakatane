@@ -27,4 +27,18 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
+
+/* zoom effect on 9 img grid*/
+
+.zoom {
+  overflow: hidden;
+}
+
+.zoom img {
+  transition: all 1.5s ease;
+}
+
+.zoom:hover img {
+  transform: scale(1.25);
+}
 /*# sourceMappingURL=style.css.map */
