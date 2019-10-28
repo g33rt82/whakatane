@@ -1,0 +1,110 @@
+// Imports
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+@import 'partials/mixins';
+@import 'partials/variables';
+body {
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    color: #505962;
+}
+
+html {
+    scroll-behavior: smooth;
+    transition-duration: 500ms;
+}
+
+main {
+    font-family: $font-stack;
+}
+
+
+/*-- navbar --*/
+
+.navbar {
+    transition: 500ms;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background: rgba(0, 0, 0, .0)!important;
+}
+
+.navbar.scrolled {
+    background: rgba(0, 0, 0, .7) !important;
+}
+
+.navbar-brand img {
+    height: 2rem;
+}
+
+.navbar-nav li {
+    padding-right: .7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: $main-orange;
+}
+
+
+/* --- slider ---*/
+
+.box1 {
+    width: 500px;
+    height: 500px;
+    border: solid 10px;
+}
+
+// ERIN START
+// About Us Styling
+.card:hover {
+    @include hover-shadow;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-margin {
+    margin-bottom: 12px;
+}
+
+.modal-image {
+    opacity: 0.15;
+}
+
+.overlay {
+    position: relative;
+    text-align: center;
+}
+
+.centered {
+    @include centered;
+}
+
+//ERIN END
+
+/* zoom effect on 9 img grid*/
+
+.zoom {
+    overflow: hidden;
+}
+
+.zoom img {
+    transition: all 1.5s ease;
+}
+
+.zoom:hover img {
+    transform: scale(1.25);
+}
+
+
+/*---------------------------*/
+
+footer {
+    background-color: #111;
+}
+
+.fa-inverse:hover {
+    color: $main-orange;
+}
