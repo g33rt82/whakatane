@@ -10,3 +10,15 @@
     transform: scale(1.25);
 }
 
+$colors: (
+    primary: #F5F5F5,
+    primary-darker: darken(#F5F5F5, 20%),
+    primary-dark: darken(#F5F5F5, 100%),
+    hover: #5F9EA0,
+    accent: #2F4F4F,
+    textlight: #FFFFFF,
+);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name)
+}
