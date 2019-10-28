@@ -1,5 +1,5 @@
-## Group Project 1 - Business Website
-# Whakatane Surf School
+# Group Project 1 - Business Website
+## Whakatane Surf School
 
 This project was created by Geert Uyttendaele, Rico X, Jasper Springael & Erin Joosen.
 
@@ -9,7 +9,7 @@ It is shared on Github for ease of sharing with coaches and colleagues.
 
 ---
 
-# Preview
+## Preview
 
 The page is divided into 4 sections:
 - Main
@@ -28,7 +28,7 @@ You can find a deployed version of the website here:
 <img src="images/preview4.png" alt="Contact preview" width="400">
 
 ---
-# Project Brief
+## Project Brief
 
 We were to make a client ready business page in groups of 4. We chose to create a page for a surf club in New Zealand (we have no affiliation with this surf club). 
 
@@ -36,4 +36,4 @@ We had an extensive list of requirements and feel we've meet them all.
 
 ---
 
-# Licensed to our group. Please do not use this website anywhere. 
+### Licensed to our group. Please do not use this website anywhere. 
