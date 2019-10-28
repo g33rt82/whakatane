@@ -1,0 +1,31 @@
+// Imports
+
+@import 'partials/mixins';
+@import 'partials/variables';
+
+// About Us Styling
+
+.card:hover {
+    @include hover-shadow;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-margin {
+    margin-bottom: 12px;
+}
+
+.modal-image {
+    opacity: 0.15;
+}
+
+.overlay {
+    position: relative;
+    text-align: center;
+}
+
+.centered {
+    @include centered;
+}
