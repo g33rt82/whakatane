@@ -150,4 +150,14 @@ a {
   background-color: transparent;
 }
 
+.title_custom {
+  color: #3B3C5A;
+  font-weight: 700;
+}
+
+#events a:hover {
+  color: #3B3C5A;
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=style.css.map */

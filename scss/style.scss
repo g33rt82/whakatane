@@ -164,3 +164,16 @@ a {
   }
 }
 
+.title_custom {
+  color: $main-blue;
+  font-weight: 700;
+}
+
+#events {
+  a {
+    &:hover {
+      color: $main-blue;
+      text-decoration: none;
+    }
+  }
+}
