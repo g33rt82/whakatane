@@ -167,4 +167,8 @@ iframe {
   frameborder: 1px;
 }
 
+.picturefix img {
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
