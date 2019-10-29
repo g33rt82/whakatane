@@ -132,11 +132,6 @@ footer h3 {
 }
 
 /* invert color container */
-.container {
-  -webkit-filter: invert(10%);
-          filter: invert(10%);
-}
-
 a {
   color: #E07421;
 }

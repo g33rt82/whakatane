@@ -98,7 +98,7 @@ html {
 .same-size {
     max-height: 12rem;
     max-width: 12rem;
-    }
+}
 
 //ERIN END
 
@@ -133,10 +133,9 @@ footer {
 #copyright {
     color: $main-orange;
 }
+
+
 /* invert color container */
-.container {
-    filter: invert(10%);
-}
 
 a {
     color: $main-orange;
