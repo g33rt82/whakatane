@@ -1,7 +1,7 @@
 # Group Project 1 - Business Website
 ## Whakatane Surf School
 
-This project was created by Geert Uyttendaele, Rico X, Jasper Springael & Erin Joosen.
+This project was created by Geert Uyttendaele, Rico De Bondt, Jasper Springael & Erin Joosen.
 
 It was made for educational purposes and was the consolidation of 1 month of CSS, HTML and Git learning @BeCode. 
 
@@ -17,7 +17,7 @@ The page is divided into 4 sections:
 - News/Events
 - Contact
 
-You can find a deployed version of the website here: 
+You can find a deployed version of the website here: https://g33rt82.github.io/whakatane/
 
 <img src="images/preview1.png" alt="Main preview" width="400">
 
