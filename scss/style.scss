@@ -9,14 +9,15 @@
 @import url('https://fonts.googleapis.com/css?family=Arimo&display=swap');
 body {
     overflow-x: hidden;
-    font-family: 'Arimo', 'sans-serif';
-    color: #505962;
+    font-family: $font-stack;
+    color: #2d2e30;
     font-size: 16px;
+    background-color: rgb(245, 243, 241);
 }
 
 html {
     scroll-behavior: smooth;
-    transition-duration: 500ms;
+    transition-duration: 700ms;
 }
 
 main {
@@ -35,7 +36,7 @@ html {
     transition: 500ms;
     text-transform: uppercase;
     transform: 500ms;
-    font-weight: 900;
+    font-weight: 700;
     font-size: .9rem;
     letter-spacing: .1rem;
     background: rgba(0, 0, 0, .0)!important;
@@ -97,7 +98,7 @@ html {
 .same-size {
     max-height: 12rem;
     max-width: 12rem;
-    }
+}
 
 //ERIN END
 
@@ -130,5 +131,12 @@ footer {
 }
 
 #copyright {
+    color: $main-orange;
+}
+
+
+/* invert color container */
+
+a {
     color: $main-orange;
 }
