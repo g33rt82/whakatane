@@ -13,8 +13,7 @@ body {
 
 html {
   scroll-behavior: smooth;
-  -webkit-transition-duration: 700ms;
-          transition-duration: 700ms;
+  transition-duration: 700ms;
 }
 
 main {
@@ -23,20 +22,17 @@ main {
 
 html {
   scroll-behavior: smooth;
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
+  transition-duration: 500ms;
 }
 
 /*-- navbar --*/
 .navbar {
-  -webkit-transition: 500ms;
   transition: 500ms;
   text-transform: uppercase;
-  -webkit-transform: 500ms;
-          transform: 500ms;
+  transform: 500ms;
   font-weight: 700;
-  font-size: .9rem;
-  letter-spacing: .1rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
   background: rgba(0, 0, 0, 0) !important;
 }
 
@@ -49,7 +45,7 @@ html {
 }
 
 .navbar-nav li {
-  padding-right: .7rem;
+  padding-right: 0.7rem;
 }
 
 .navbar-dark .navbar-nav .nav-link.active,
@@ -64,8 +60,9 @@ html {
   border: solid 10px;
 }
 
-.card:hover {
+#about .card:hover {
   -webkit-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
 }
 
@@ -90,8 +87,7 @@ html {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .same-size {
@@ -105,20 +101,17 @@ html {
 }
 
 .zoom img {
-  -webkit-transition: all 1.5s ease;
   transition: all 1.5s ease;
 }
 
 .zoom:hover img {
-  -webkit-transform: scale(1.25);
-          transform: scale(1.25);
+  transform: scale(1.25);
 }
 
 /*---------------------------*/
 footer {
   background-color: #111;
 }
-
 footer h3 {
   color: #E07421;
 }
@@ -135,4 +128,26 @@ footer h3 {
 a {
   color: #E07421;
 }
+
+.btn_custom {
+  color: #E07421;
+  font-size: 1.25rem;
+  position: relative;
+  top: -15px;
+}
+.btn_custom:hover {
+  color: #E07421;
+  border: 1px solid #E07421;
+}
+
+.form_btn {
+  background-color: #E07421;
+  color: #f5f3f1;
+}
+.form_btn:hover {
+  border: 1px solid #E07421;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
 /*# sourceMappingURL=style.css.map */

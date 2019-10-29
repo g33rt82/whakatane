@@ -70,8 +70,10 @@ html {
 
 // ERIN START
 // About Us Styling
+#about{
 .card:hover {
     @include hover-shadow;
+}
 }
 
 .card-body {
@@ -140,3 +142,25 @@ footer {
 a {
     color: $main-orange;
 }
+
+.btn_custom{
+  color: $main-orange;
+  font-size: 1.25rem;
+  position: relative;
+  top: -15px;
+  &:hover {
+    color: $main-orange;
+    border: 1px solid $main-orange;
+  }
+}
+
+.form_btn {
+  background-color: $main-orange;
+  color: #f5f3f1;
+  &:hover {
+    border: 1px solid $main-orange;
+    border-radius: 5px;
+    background-color:transparent;
+  }
+}
+
